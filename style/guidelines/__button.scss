@@ -1,0 +1,22 @@
+.guidelines__button
+{
+    color: rgb(92, 92, 211);
+    position: relative;
+}
+.guidelines__button::after
+{
+    content: "";
+    display: block;
+    background-color:rgb(92, 92, 211) ;
+    position:absolute;
+    bottom: 0;
+    height: 2px;
+    transform: scale(0);
+    transition: transform .5s ease-in-out;
+    width: 100%;
+
+}
+.guidelines__button:hover::after
+{
+    transform: scale(1);
+}

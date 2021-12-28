@@ -1,0 +1,156 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100;0,200;0,300;0,500;0,600;0,700;1,500&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  border: none;
+  list-style: none;
+  outline: none;
+  box-sizing: border-box;
+  font-family: "Roboto Mono", monospace;
+}
+
+.doc {
+  font-size: 1.3em;
+  text-transform: capitalize;
+  padding: 4% 0;
+}
+
+.title {
+  color: #999;
+}
+
+.story {
+  font-size: 1.2em;
+  font-weight: lighter;
+}
+
+.btn {
+  cursor: pointer;
+  background-color: transparent;
+  font-size: 1.5rem;
+}
+
+.main__container {
+  display: grid;
+  grid-template: repeat(3, 1fr) 0.5fr/repeat(4, 1fr);
+}
+
+/* style iphone-6s starts */
+.iphone-6s {
+  grid-area: 1/1/2/3;
+}
+
+.iphone-6s__content {
+  padding: 0 1%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.iphone-6s__information {
+  padding: 20% 5%;
+}
+
+.iphone-6s__title {
+  font-size: 1.3em;
+}
+
+.iphone-6s__title::first-letter {
+  text-transform: uppercase;
+}
+
+.iphone-6s__learn-more {
+  padding: 4% 0;
+}
+
+.iphone-6s__image {
+  padding: 4em 0 0;
+  width: 17em;
+  -o-object-fit: cover;
+     object-fit: cover;
+  position: relative;
+  bottom: 0;
+}
+
+/* style iphone-6s ends */
+/* style guidelines starts */
+.guidelines {
+  grid-area: 1/3/2/5;
+}
+
+.guidelines__content {
+  background-color: #f7f8f9;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  gap: 2.6rem;
+}
+
+.guidelines__text {
+  padding: 0 15%;
+  font-size: 2.5em;
+  text-align: center;
+  text-transform: capitalize;
+}
+
+.guidelines__button {
+  color: #5c5cd3;
+  position: relative;
+}
+
+.guidelines__button::after {
+  content: "";
+  display: block;
+  background-color: #5c5cd3;
+  position: absolute;
+  bottom: 0;
+  height: 2px;
+  transform: scale(0);
+  transition: transform 0.5s ease-in-out;
+  width: 100%;
+}
+
+.guidelines__button:hover::after {
+  transform: scale(1);
+}
+
+/* style guidelines ends */
+/* style brand-new starts */
+.brand-new {
+  grid-area: 2/1/3/2;
+}
+
+.brand-new__content {
+  background-color: #f05638;
+  height: 100%;
+  padding: 14%;
+  text-align: center;
+  color: white;
+}
+
+.brand-new__image {
+  width: 20em;
+  position: relative;
+  left: -15%;
+}
+
+.brand-new__info {
+  font-weight: bolder;
+  font-size: 1.5rem;
+}
+
+.brand-new__button {
+  padding: 12% 0;
+  color: yellow;
+  transition: letter-spacing 0.5s linear;
+}
+
+.brand-new__button::after {
+  content: " >";
+}
+
+.brand-new__button:hover {
+  letter-spacing: 0.3em;
+}/*# sourceMappingURL=style.css.map */
