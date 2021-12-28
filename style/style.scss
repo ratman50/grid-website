@@ -40,5 +40,36 @@
 @import "./brand-new/__content";
 @import "./brand-new/__image";
 @import "./brand-new/__info";
-@import "./brand-new/__button"
+@import "./brand-new/__button";
 /* style brand-new starts */
+
+
+/* style apple starts */
+.apple
+{
+  grid-area: 2/2/3/4;
+}
+@import "./apple/__content";
+@import "./apple/__imac";
+@import "./apple/__description";
+@import "./apple/__title";
+@import "./apple/__doc";
+@import "./apple/__image";
+@import "./apple/__text";
+@import "./apple/__story";
+@import "./apple/__button";
+/* style apple ends */
+
+/* style icloud starts */
+.icloud
+{
+  grid-area: 2/4/4/5;
+  background-color: #8f76bc;
+  color: white;
+  display: grid;
+  
+  grid-template-rows: repeat(2,1fr);
+  overflow: hidden
+}
+@import "./icloud/__meet";
+/* style icloud ends */

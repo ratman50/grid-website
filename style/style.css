@@ -13,7 +13,7 @@
 .doc {
   font-size: 1.3em;
   text-transform: capitalize;
-  padding: 4% 0;
+  /* padding:  4% 0; */
 }
 
 .title {
@@ -44,7 +44,9 @@
 .iphone-6s__content {
   padding: 0 1%;
   display: grid;
+  height: 100%;
   grid-template-columns: repeat(2, 1fr);
+  align-content: flex-end;
 }
 
 .iphone-6s__information {
@@ -65,7 +67,7 @@
 
 .iphone-6s__image {
   padding: 4em 0 0;
-  width: 17em;
+  width: 15em;
   -o-object-fit: cover;
      object-fit: cover;
   position: relative;
@@ -89,8 +91,8 @@
 }
 
 .guidelines__text {
-  padding: 0 15%;
-  font-size: 2.5em;
+  padding: 0 10%;
+  font-size: 2em;
   text-align: center;
   text-transform: capitalize;
 }
@@ -125,7 +127,7 @@
 .brand-new__content {
   background-color: #f05638;
   height: 100%;
-  padding: 14%;
+  padding: 10%;
   text-align: center;
   color: white;
 }
@@ -133,7 +135,7 @@
 .brand-new__image {
   width: 20em;
   position: relative;
-  left: -15%;
+  left: -10%;
 }
 
 .brand-new__info {
@@ -153,4 +155,98 @@
 
 .brand-new__button:hover {
   letter-spacing: 0.3em;
-}/*# sourceMappingURL=style.css.map */
+}
+
+/* style brand-new starts */
+/* style apple starts */
+.apple {
+  grid-area: 2/2/3/4;
+}
+
+.apple__content {
+  /* padding: 3em 3em 0; */
+  display: flex;
+  height: 100%;
+}
+
+.apple__imac {
+  height: 100%;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.apple__description {
+  padding: 2em 2em 0;
+  /* height: 20em; */
+  height: 50%;
+  display: flex;
+  flex-direction: column;
+}
+
+.apple__title {
+  text-transform: uppercase;
+  align-self: flex-start;
+}
+
+.apple__doc {
+  font-weight: 500;
+}
+
+.apple__image {
+  position: relative;
+  left: -90%;
+  width: 35em;
+  z-index: -100;
+  margin: 0 auto;
+}
+
+.apple__text {
+  width: 50%;
+  padding: 3%;
+}
+
+.apple__story {
+  font-size: 1rem;
+  line-height: 2em;
+  padding: 10%;
+}
+
+.apple__button {
+  padding-top: 3em;
+  color: dodgerblue;
+  transition: 0.5s word-spacing linear;
+}
+
+.apple__button:hover {
+  word-spacing: 0.3em;
+}
+
+.apple__button::after {
+  content: " >";
+}
+
+/* style apple ends */
+/* style icloud starts */
+.icloud {
+  grid-area: 2/4/4/5;
+  background-color: #8f76bc;
+  color: white;
+  display: grid;
+  grid-template-rows: repeat(2, 1fr);
+  overflow: hidden;
+}
+
+.icloud__meet {
+  /* padding: 3em 0; */
+  border-radius: 50%;
+  border: 1px solid black;
+  width: 120%;
+  margin-bottom: 0.4em;
+  position: relative;
+  left: -10%;
+  text-align: center;
+}
+
+/* style icloud ends *//*# sourceMappingURL=style.css.map */

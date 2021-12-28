@@ -1,0 +1,14 @@
+.apple__button
+{
+    padding-top: 3em;
+    color:dodgerblue;
+    transition: .5s word-spacing linear;
+}
+.apple__button:hover
+{
+    word-spacing: .3em;
+}
+.apple__button::after
+{
+    content: " >";
+}
