@@ -2,7 +2,11 @@
 {
     background-color: #f05638;
     height: 100%;
-    padding: 10%;
+    /* padding: 10%; */
     text-align: center;
     color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 1.4rem;
+    justify-content: space-between;
 }

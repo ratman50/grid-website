@@ -46,7 +46,6 @@
   display: grid;
   height: 100%;
   grid-template-columns: repeat(2, 1fr);
-  align-content: flex-end;
 }
 
 .iphone-6s__information {
@@ -67,7 +66,7 @@
 
 .iphone-6s__image {
   padding: 4em 0 0;
-  width: 15em;
+  width: 13em;
   -o-object-fit: cover;
      object-fit: cover;
   position: relative;
@@ -127,20 +126,24 @@
 .brand-new__content {
   background-color: #f05638;
   height: 100%;
-  padding: 10%;
+  /* padding: 10%; */
   text-align: center;
   color: white;
+  display: flex;
+  flex-direction: column;
+  gap: 1.4rem;
+  justify-content: space-between;
 }
 
 .brand-new__image {
-  width: 20em;
-  position: relative;
-  left: -10%;
+  width: 16em;
+  margin: 0 auto;
 }
 
 .brand-new__info {
   font-weight: bolder;
   font-size: 1.5rem;
+  padding: 0 12%;
 }
 
 .brand-new__button {
@@ -167,22 +170,16 @@
   /* padding: 3em 3em 0; */
   display: flex;
   height: 100%;
+  justify-content: flex-start;
 }
 
 .apple__imac {
   height: 100%;
-  width: 50%;
+  width: 35%;
+  padding: 3% 0 0 3%;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-}
-
-.apple__description {
-  padding: 2em 2em 0;
-  /* height: 20em; */
-  height: 50%;
-  display: flex;
-  flex-direction: column;
 }
 
 .apple__title {
@@ -192,12 +189,16 @@
 
 .apple__doc {
   font-weight: 500;
+  /* padding-right:15%; */
+  display: inline;
+  /* width: 90%; */
 }
 
 .apple__image {
   position: relative;
-  left: -90%;
-  width: 35em;
+  /* left: -90%; */
+  width: 28em;
+  left: -18em;
   z-index: -100;
   margin: 0 auto;
 }
@@ -205,16 +206,18 @@
 .apple__text {
   width: 50%;
   padding: 3%;
+  display: flex;
+  flex-direction: column;
 }
 
 .apple__story {
   font-size: 1rem;
   line-height: 2em;
-  padding: 10%;
+  /* padding:10% */
 }
 
 .apple__button {
-  padding-top: 3em;
+  /* padding-top: 3em; */
   color: dodgerblue;
   transition: 0.5s word-spacing linear;
 }
@@ -239,14 +242,46 @@
 }
 
 .icloud__meet {
-  /* padding: 3em 0; */
   border-radius: 50%;
-  border: 1px solid black;
-  width: 120%;
+  width: 125%;
+  height: 90%;
+  padding: 1em;
   margin-bottom: 0.4em;
-  position: relative;
-  left: -10%;
   text-align: center;
+  position: relative;
+  left: -2em;
+  background: #735f99;
+}
+
+.fas.fa-flag {
+  color: gold;
+  font-size: 1.2em;
+}
+
+.icloud__save {
+  width: 13em;
+  padding: 3% 0;
+}
+
+.icloud__information {
+  padding: 3%;
+}
+
+.icloud__title {
+  padding-bottom: 2%;
+}
+
+.icloud__popular {
+  text-transform: uppercase;
+}
+
+.icloud__learn-more {
+  padding-top: 5%;
+  transition: opacity 0.5s linear;
+}
+
+.icloud__learn-more:hover {
+  opacity: 0.5;
 }
 
 /* style icloud ends *//*# sourceMappingURL=style.css.map */
