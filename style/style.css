@@ -46,6 +46,7 @@
   display: grid;
   height: 100%;
   grid-template-columns: repeat(2, 1fr);
+  align-items: flex-end;
 }
 
 .iphone-6s__information {
@@ -86,11 +87,11 @@
   align-items: center;
   justify-content: center;
   height: 100%;
-  gap: 2.6rem;
+  gap: 1rem;
 }
 
 .guidelines__text {
-  padding: 0 10%;
+  padding: 0 16%;
   font-size: 2em;
   text-align: center;
   text-transform: capitalize;
@@ -126,18 +127,19 @@
 .brand-new__content {
   background-color: #f05638;
   height: 100%;
-  /* padding: 10%; */
   text-align: center;
   color: white;
   display: flex;
   flex-direction: column;
   gap: 1.4rem;
-  justify-content: space-between;
+  justify-content: flex-end;
 }
 
 .brand-new__image {
-  width: 16em;
+  width: 18em;
   margin: 0 auto;
+  /* position: relative;
+  top: 10%; */
 }
 
 .brand-new__info {
@@ -147,7 +149,6 @@
 }
 
 .brand-new__button {
-  padding: 12% 0;
   color: yellow;
   transition: letter-spacing 0.5s linear;
 }
@@ -167,16 +168,16 @@
 }
 
 .apple__content {
-  /* padding: 3em 3em 0; */
   display: flex;
   height: 100%;
-  justify-content: flex-start;
+  padding: 10% 5% 0;
+  justify-content: space-between;
+  word-wrap: wrap;
 }
 
 .apple__imac {
   height: 100%;
-  width: 35%;
-  padding: 3% 0 0 3%;
+  width: 50%;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -189,37 +190,32 @@
 
 .apple__doc {
   font-weight: 500;
-  /* padding-right:15%; */
   display: inline;
-  /* width: 90%; */
 }
 
 .apple__image {
   position: relative;
-  /* left: -90%; */
-  width: 28em;
-  left: -18em;
+  width: 20em;
+  left: -13em;
   z-index: -100;
   margin: 0 auto;
 }
 
 .apple__text {
   width: 50%;
-  padding: 3%;
   display: flex;
   flex-direction: column;
 }
 
 .apple__story {
-  font-size: 1rem;
+  font-size: 0.8em;
   line-height: 2em;
-  /* padding:10% */
 }
 
 .apple__button {
-  /* padding-top: 3em; */
   color: dodgerblue;
   transition: 0.5s word-spacing linear;
+  font-size: 1rem;
 }
 
 .apple__button:hover {
@@ -236,6 +232,7 @@
   grid-area: 2/4/4/5;
   background-color: #8f76bc;
   color: white;
+  padding: 3% 0;
   display: grid;
   grid-template-rows: repeat(2, 1fr);
   overflow: hidden;
@@ -243,13 +240,12 @@
 
 .icloud__meet {
   border-radius: 50%;
-  width: 125%;
+  width: 115%;
   height: 90%;
   padding: 1em;
-  margin-bottom: 0.4em;
   text-align: center;
   position: relative;
-  left: -2em;
+  left: -1em;
   background: #735f99;
 }
 
@@ -259,7 +255,7 @@
 }
 
 .icloud__save {
-  width: 13em;
+  width: 10em;
   padding: 3% 0;
 }
 
@@ -284,4 +280,71 @@
   opacity: 0.5;
 }
 
-/* style icloud ends *//*# sourceMappingURL=style.css.map */
+/* style icloud ends */
+/* style games starts */
+.games {
+  grid-area: 3/1/4/2;
+}
+
+.games__content {
+  background: #f7f8f9;
+  height: 100%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.games__image {
+  width: 10em;
+  position: relative;
+  left: -1.5em;
+}
+
+.games__title {
+  padding: 0 6em;
+  color: red;
+  font-weight: 300;
+}
+
+.games__button {
+  padding: 3% 0;
+}
+
+/* style games ends */
+/* style experience starts */
+.experience {
+  grid-area: 3/2/4/4;
+  background: #93b6b7;
+  color: white;
+}
+
+.experience__content {
+  /* display: flex;
+  flex-direction: column;
+  justify-content: space-between; */
+  height: 100%;
+  padding: 3%;
+}
+
+.experience__choice {
+  background-color: red;
+  display: inline-block;
+  padding: 0.4em;
+  font-size: 0.7rem;
+  border-radius: 8px;
+}
+
+.experience__title {
+  text-align: center;
+  padding: 3% 24%;
+  text-transform: uppercase;
+  font-weight: bolder;
+}
+
+.experience__container-image {
+  background-image: url("../../images/bg1.png");
+}
+
+/* style experience ends *//*# sourceMappingURL=style.css.map */

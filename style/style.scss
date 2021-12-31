@@ -65,6 +65,7 @@
   grid-area: 2/4/4/5;
   background-color: #8f76bc;
   color: white;
+  padding: 3% 0;
   display: grid;
   grid-template-rows: repeat(2,1fr);
   overflow: hidden
@@ -84,3 +85,29 @@
 
 
 /* style icloud ends */
+
+/* style games starts */
+.games
+{
+  grid-area: 3/1/4/2;
+}
+@import "./games/__content";
+@import "./games/__image";
+@import "./games/__title";
+@import "./games/__button";
+/* style games ends */
+
+
+/* style experience starts */
+.experience
+{
+  grid-area: 3/2/4/4;
+  background: #93b6b7;
+  color: white;
+}
+@import "./experience/__content";
+@import "./experience/__choice";
+@import "./experience/__title";
+@import "./experience/__container-image";
+/* style experience ends */
+
