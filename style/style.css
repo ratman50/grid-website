@@ -58,6 +58,11 @@
   padding: 20% 5%;
 }
 
+@media (max-width: 991px) {
+  .iphone-6s__information {
+    padding-left: 20%;
+  }
+}
 .iphone-6s__title {
   font-size: 1.3em;
 }
@@ -95,6 +100,11 @@
   gap: 1rem;
 }
 
+@media (max-width: 991px) {
+  .guidelines__content {
+    padding: 6%;
+  }
+}
 .guidelines__text {
   padding: 0 16%;
   font-size: 2em;
@@ -180,6 +190,11 @@
   word-wrap: wrap;
 }
 
+@media (max-width: 991px) {
+  .apple__content {
+    padding-top: 4%;
+  }
+}
 .apple__imac {
   height: 100%;
   width: 50%;
@@ -213,7 +228,7 @@
 }
 
 .apple__story {
-  font-size: 0.8em;
+  font-size: 1rem;
   line-height: 2em;
 }
 
@@ -386,6 +401,10 @@
   border-radius: 50%;
   text-align: center;
   padding: 10%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 
 /* style connect ends */
@@ -429,10 +448,54 @@
 }
 
 .display__text {
-  /* align-self: flex-start; */
-  /* padding-top: 1.5em; */
   width: 50%;
   font-size: 1rem;
 }
 
-/* style display ends *//*# sourceMappingURL=style.css.map */
+/* style display ends */
+@media (max-width: 991px) {
+  .main__container {
+    display: grid;
+    grid-template: 0.5fr repeat(5, 0.65fr) 0.2fr 0.4fr/repeat(2, 1fr);
+  }
+
+  .iphone-6s {
+    grid-area: 2/1/3/3;
+  }
+
+  .guidelines {
+    grid-area: 1/1/2/-1;
+  }
+
+  .brand-new {
+    grid-area: 3/1/4/2;
+  }
+
+  .games {
+    grid-area: 3/2/4/3;
+  }
+
+  .apple {
+    grid-area: 4/1/5/-1;
+  }
+
+  .connect {
+    grid-area: 5/1/6/2;
+  }
+
+  .icloud {
+    grid-area: 5/2/7/3;
+  }
+
+  .experience {
+    grid-area: 6/1/7/2;
+  }
+
+  .much-better {
+    grid-area: 7/1/8/-1;
+  }
+
+  .display {
+    grid-area: 8/1/9/-1;
+  }
+}/*# sourceMappingURL=style.css.map */

@@ -1,14 +1,11 @@
 @import "global";
 
-
-
 .main__container {
   display: grid;
-  grid-template: repeat(3, 1fr) .5fr / repeat(4,1fr);
+  grid-template: repeat(3, 1fr) 0.5fr / repeat(4, 1fr);
 }
 /* style iphone-6s starts */
-.iphone-6s
-{
+.iphone-6s {
   grid-area: 1/1/2/3;
 }
 @import "./iphone-6s/__content";
@@ -19,22 +16,18 @@
 
 /* style iphone-6s ends */
 
-
 /* style guidelines starts */
-.guidelines
-{
-  grid-area:1/3/2/5;
+.guidelines {
+  grid-area: 1/3/2/5;
 }
-@import"./guidelines/__content";
-@import"./guidelines/__text";
-@import"./guidelines/__button";
-
+@import "./guidelines/__content";
+@import "./guidelines/__text";
+@import "./guidelines/__button";
 
 /* style guidelines ends */
 
 /* style brand-new starts */
-.brand-new
-{
+.brand-new {
   grid-area: 2/1/3/2;
 }
 @import "./brand-new/__content";
@@ -43,10 +36,8 @@
 @import "./brand-new/__button";
 /* style brand-new starts */
 
-
 /* style apple starts */
-.apple
-{
+.apple {
   grid-area: 2/2/3/4;
 }
 @import "./apple/__content";
@@ -60,21 +51,19 @@
 /* style apple ends */
 
 /* style icloud starts */
-.icloud
-{
+.icloud {
   grid-area: 2/4/4/5;
   background-color: #8f76bc;
   color: white;
   padding: 3% 0;
   display: grid;
-  grid-template-rows: repeat(2,1fr);
-  overflow: hidden
+  grid-template-rows: repeat(2, 1fr);
+  overflow: hidden;
 }
 @import "./icloud/__meet";
-.fas.fa-flag
-{
+.fas.fa-flag {
   color: gold;
-  font-size: 1.2em
+  font-size: 1.2em;
 }
 @import "./icloud/__save";
 @import "./icloud/__information";
@@ -82,13 +71,10 @@
 @import "./icloud/__popular";
 @import "./icloud/__learn-more";
 
-
-
 /* style icloud ends */
 
 /* style games starts */
-.games
-{
+.games {
   grid-area: 3/1/4/2;
 }
 @import "./games/__content";
@@ -97,10 +83,8 @@
 @import "./games/__button";
 /* style games ends */
 
-
 /* style experience starts */
-.experience
-{
+.experience {
   grid-area: 3/2/4/4;
   background: #93b6b7;
   color: white;
@@ -112,48 +96,87 @@
 @import "./experience/__image";
 /* style experience ends */
 
-
 /* style connect starts */
-.connect
-{
+.connect {
   grid-area: 4/1/5/2;
   height: 100%;
   background: #38d5f4;
-  display:flex;
-  justify-content:center;
+  display: flex;
+  justify-content: center;
   overflow: hidden;
-  align-items:center;
+  align-items: center;
 }
 @import "./connect/__content";
 /* style connect ends */
 
-
 /* style much-better starts */
-.much-better
-{
+.much-better {
   grid-area: 4/2/5/3;
   padding: 3%;
-  text-align: center
+  text-align: center;
 }
 @import "./much-better/__popular";
 @import "./much-better/__text";
 
-
 /* style much-better ends */
 
-
 /* style display starts */
-.display
-{
+.display {
   grid-area: 4/3/5/-1;
   background-color: #2c2c2c;
   color: white;
   display: flex;
-  
+
   overflow: hidden;
 }
 @import "./display/__image";
 @import "./display/__text";
 /* style display ends */
 
-
+@media (max-width: 991px) {
+  .main__container {
+    display: grid;
+    grid-template: .5fr repeat(5, .65fr) .2fr .4fr / repeat(2, 1fr);
+  }
+  .iphone-6s {
+    grid-area: 2/1/3/3;
+  }
+  
+  .guidelines {
+    grid-area: 1/1/2/-1;
+  }
+  .brand-new {
+    grid-area: 3/1/4/2;
+  }
+  .games {
+    grid-area: 3/2/4/3;
+  }
+  .apple	
+  {
+    grid-area: 4/1/5/-1 ;
+  }
+  .connect
+  {
+    grid-area: 5/1/6/2 ;
+  }
+  .icloud
+  {
+    grid-area: 5/2/7/3;
+  }
+  .experience
+  {
+    grid-area: 6/1/7/2;
+  }
+  .much-better
+  {
+    grid-area: 7/1/8/-1;
+  }
+  .display
+  {
+    grid-area: 8/1/9/-1;
+  }
+}
+@media (max-width: 768px) {
+}
+@media (max-width: 450px) {
+}
