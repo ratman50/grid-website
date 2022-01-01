@@ -31,6 +31,11 @@
   font-size: 1.5rem;
 }
 
+.fa-twitter {
+  font-size: 4.5rem;
+  color: gold;
+}
+
 .main__container {
   display: grid;
   grid-template: repeat(3, 1fr) 0.5fr/repeat(4, 1fr);
@@ -321,16 +326,18 @@
 }
 
 .experience__content {
-  /* display: flex;
-  flex-direction: column;
-  justify-content: space-between; */
   height: 100%;
-  padding: 3%;
+  width: 100%;
+  padding: 3% 3% 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .experience__choice {
   background-color: red;
   display: inline-block;
+  align-self: flex-start;
   padding: 0.4em;
   font-size: 0.7rem;
   border-radius: 8px;
@@ -338,13 +345,94 @@
 
 .experience__title {
   text-align: center;
-  padding: 3% 24%;
   text-transform: uppercase;
   font-weight: bolder;
+  padding: 0 30%;
 }
 
 .experience__container-image {
-  background-image: url("../../images/bg1.png");
+  background: url("../../images/bg1.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 70%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
 }
 
-/* style experience ends *//*# sourceMappingURL=style.css.map */
+.experience__image {
+  width: 25em;
+  position: relative;
+  left: -2em;
+}
+
+/* style experience ends */
+/* style connect starts */
+.connect {
+  grid-area: 4/1/5/2;
+  height: 100%;
+  background: #38d5f4;
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
+  align-items: center;
+}
+
+.connect__content {
+  width: 90%;
+  height: 130%;
+  background: #35cfed;
+  border-radius: 50%;
+  text-align: center;
+  padding: 10%;
+}
+
+/* style connect ends */
+/* style much-better starts */
+.much-better {
+  grid-area: 4/2/5/3;
+  padding: 3%;
+  text-align: center;
+}
+
+.much-better__popular {
+  font-size: 0.9rem;
+  padding: 2%;
+  display: inline-block;
+  border-radius: 15px;
+  background: greenyellow;
+  color: white;
+}
+
+.much-better__text {
+  padding: 5%;
+}
+
+/* style much-better ends */
+/* style display starts */
+.display {
+  grid-area: 4/3/5/-1;
+  background-color: #2c2c2c;
+  color: white;
+  display: flex;
+  overflow: hidden;
+}
+
+.display__image {
+  width: 15em;
+  position: relative;
+  left: -4em;
+  top: -2em;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.display__text {
+  /* align-self: flex-start; */
+  /* padding-top: 1.5em; */
+  width: 50%;
+  font-size: 1rem;
+}
+
+/* style display ends *//*# sourceMappingURL=style.css.map */

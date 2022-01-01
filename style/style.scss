@@ -109,5 +109,51 @@
 @import "./experience/__choice";
 @import "./experience/__title";
 @import "./experience/__container-image";
+@import "./experience/__image";
 /* style experience ends */
+
+
+/* style connect starts */
+.connect
+{
+  grid-area: 4/1/5/2;
+  height: 100%;
+  background: #38d5f4;
+  display:flex;
+  justify-content:center;
+  overflow: hidden;
+  align-items:center;
+}
+@import "./connect/__content";
+/* style connect ends */
+
+
+/* style much-better starts */
+.much-better
+{
+  grid-area: 4/2/5/3;
+  padding: 3%;
+  text-align: center
+}
+@import "./much-better/__popular";
+@import "./much-better/__text";
+
+
+/* style much-better ends */
+
+
+/* style display starts */
+.display
+{
+  grid-area: 4/3/5/-1;
+  background-color: #2c2c2c;
+  color: white;
+  display: flex;
+  
+  overflow: hidden;
+}
+@import "./display/__image";
+@import "./display/__text";
+/* style display ends */
+
 

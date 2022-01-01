@@ -1,8 +1,9 @@
 .experience__content
 {
-    /* display: flex;
-    flex-direction: column;
-    justify-content: space-between; */
     height: 100%;
-    padding: 3%;
+    width: 100%;
+    padding: 3% 3% 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
